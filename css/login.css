@@ -1,0 +1,114 @@
+/*css重置样式*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+/*重置完成*/
+
+body {
+	font-size: 12px;
+	font-family: "宋体";
+	color: #666;
+
+	min-width: 680px;
+	min-height: 500px;
+
+	background: url("../img/background_png.png") no-repeat top center;
+}
+
+.box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	margin: -173px 0 0 -250px;
+
+	width: 500px;
+	height: 346px;
+	background-color: #fff;
+}
+
+.box-head {
+	width: 500px;
+	height: 65px;
+	background: url("../img/scroll.png") #575482 no-repeat top;
+	text-align: center;
+}
+
+.box-head > img {
+	margin-top: 22px;
+}
+
+.box-content {
+	margin: 35px 0 0 67px;
+	width: 362px;
+	height: 190px;
+}
+
+.box-content dt {
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+    margin-bottom: 1px;
+}
+
+.box-content form {
+	margin-top: 14px;
+    display: inline-block;
+}
+
+.remember-password {
+	float: left;
+	margin-right: 8px;
+}
+
+.client-name, .password {
+	margin-bottom: 13px;
+
+	border: 1px solid #ccc;
+	padding-left: 10px;
+
+	width: 350px;
+	height: 30px;
+
+	background-color: #ededed;
+	font-size: 14px;
+	color: #666;
+}
+
+.submit {
+	float: right;
+	font-size: 18px;
+	color: #fff;
+
+	margin: 6px 0px 0 0;
+
+	width: 120px;
+	height: 40px;
+
+	background-color: #ec6941;
+	border: 0;
+
+	outline: 0;
+}
+
+.submit:hover {
+	cursor: pointer;
+	background-color: #d5552e;
+}
+
+.submit:active {
+	background-color: #d5552e;
+	box-shadow: 1px 1px 1px #ec6 inset;
+}

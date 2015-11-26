@@ -1,0 +1,138 @@
+/*css重置样式*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+/*重置完成*/
+body {
+	font-size: 18px;
+	font-family: "微软雅黑";
+
+	min-height: 600px;
+	min-width: 1100px;
+
+	background: url("../img/background_png.png") no-repeat center top;
+}
+
+.tabs {
+	position: absolute;
+	left: 50%;
+	top: 48%;
+
+	margin: -250px 0 0 -500px;
+
+	height: 500px;
+}
+
+.tabs >dl {
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+	width: 1000px;
+	height: 490px;
+}
+
+.tabs-title {
+	overflow: hidden;
+	width: 100%;
+	line-height: 20px;
+}
+
+.tabs-title a {
+	margin: 10px 0 0 20px;
+
+	padding-left: 28px;
+	padding-bottom: 4px;
+	font-size: 18px;
+	width: 240px;
+	height: 25px;
+	line-height: 25px;
+	color: #666;
+
+	transition-property: all;
+	transition-duration: .4s;
+	transition-timing-function: ease;
+	transition-delay: .1s;
+}
+
+.tabs .selected, .tabs a:hover {
+	color: #ec6941;
+	background: url("../img/arrow.png") no-repeat left;
+}
+
+.tabs-content {
+	width: 2000px;
+	height: 450px;
+	position: absolute;
+	left: 0;
+	top: 25px;
+}
+
+.tabs-content >ul {
+	display: inline-block;
+	width: 1000px;
+	height: 450px;
+	float: left;
+}
+
+.tabs-content >img {
+	position: fixed;
+	top: 35%;
+}
+
+.tabs-content >img:hover {
+	cursor: pointer;
+}
+
+#PREV {
+	left: 0;
+}
+
+#NEXT {
+	right: 0;
+}
+
+.data-cms >li {
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.server-platform >li {
+	display: block;
+	float: left;
+	height: 150px;
+	width: 560px;
+}
+
+.server-platform >li:first-child {
+	margin: 50px 40px 0 50px;
+	width: 340px;
+	height: 400px;
+}
+
+.server-platform li dt {
+	font-size: 12px;
+	color: #333;
+	margin: 28px 0 8px 0;
+	padding-left: 14px;
+	background: url("../img/arrow1.png") left no-repeat;
+	height: 14px;
+	line-height: 14px;
+}
+
+.server-platform li >a {
+	float: left;
+	margin-right: 10px;
+}
